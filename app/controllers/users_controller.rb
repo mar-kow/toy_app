@@ -4,12 +4,15 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
+    @time = Time.now
     @users = User.all
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
+        @p = params.to_yaml
+
   end
 
   # GET /users/new
