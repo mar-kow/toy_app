@@ -12,7 +12,6 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
         @p = params.to_yaml
-
   end
 
   # GET /users/new
