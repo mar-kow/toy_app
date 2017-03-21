@@ -12,8 +12,12 @@
 </p>
 
 <p>
-  <strong>Firts micropost:</strong>
-  <%= @microposts.content %>
+  <% if @microposts %>
+    <strong>Firts micropost:</strong>
+    <%= @microposts.content %>
+  <% else %>
+    There is no post to show
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
