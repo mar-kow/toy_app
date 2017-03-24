@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    @microposts = @user.microposts.first
+    @microposts = @user.microposts
     @p = params.to_yaml
   end
 

@@ -12,9 +12,9 @@
 </p>
 
 <p>
-  <% if @microposts %>
+  <% if @microposts.present? %>
     <strong>Firts micropost:</strong>
-    <%= @microposts.content %>
+    <%= @microposts.first %>
   <% else %>
     There is no post to show
   <% end %>
