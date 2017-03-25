@@ -13,8 +13,10 @@
 
 <p>
   <% if @microposts.present? %>
-    <strong>Firts micropost:</strong>
-    <%= @microposts.first %>
+    <strong>Micropost:</strong>
+    <% @microposts.each do |micropost| %>
+      <%= micropost %>
+    <% end %>
   <% else %>
     There is no post to show
   <% end %>
